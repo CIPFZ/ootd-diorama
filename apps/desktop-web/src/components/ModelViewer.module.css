@@ -1,0 +1,64 @@
+.viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.canvasWrap {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(180deg, #fbfaf7 0%, #ece7de 100%);
+  border: 1px solid var(--line);
+  cursor: grab;
+}
+
+.canvasWrap:active {
+  cursor: grabbing;
+}
+
+.previewOverlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.errorNote {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 10px 16px;
+  background: rgba(42, 38, 33, 0.72);
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  z-index: 2;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hint {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.resetBtn {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.resetBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}

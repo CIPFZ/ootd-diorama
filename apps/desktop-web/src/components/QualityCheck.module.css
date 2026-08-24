@@ -1,0 +1,78 @@
+.wrap {
+  margin-top: 16px;
+}
+
+.verdict {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.pass {
+  background: #e7f2ea;
+  color: var(--ok);
+}
+
+.warn {
+  background: #f7efdd;
+  color: #9a7a2e;
+}
+
+.fail {
+  background: #f8e5e5;
+  color: var(--danger);
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex: none;
+}
+
+.dot.pass {
+  background: #e7f2ea;
+  color: var(--ok);
+}
+
+.dot.warn {
+  background: #f7efdd;
+  color: #9a7a2e;
+}
+
+.dot.fail {
+  background: #f8e5e5;
+  color: var(--danger);
+}
+
+.label {
+  color: var(--text);
+  flex: none;
+  width: 72px;
+}
+
+.message {
+  color: var(--text-muted);
+}

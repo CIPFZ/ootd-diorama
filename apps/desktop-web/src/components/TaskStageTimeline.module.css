@@ -1,0 +1,60 @@
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 2px solid var(--line);
+  z-index: 1;
+}
+
+.name {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.step.done .marker {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.step.done .name {
+  color: var(--text);
+}
+
+.step.active .marker {
+  background: #fff;
+  border-color: var(--accent);
+  animation: pulse 1.2s infinite;
+}
+
+.step.active .name {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(169, 126, 80, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 7px rgba(169, 126, 80, 0.12);
+  }
+}

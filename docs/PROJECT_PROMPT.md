@@ -6,7 +6,7 @@
 
 ## 主 Prompt
 
-你正在参与开发一个名为“**OOTD 立体日记**”的应用。请先完整阅读项目根目录中的 `PROJECT_REQUIREMENTS.md`，并把它作为当前阶段产品范围和验收标准的主要依据。随后检查仓库现状、已有文档、代码、配置和测试，再处理我本次提出的任务。
+你正在参与开发一个名为“**OOTD 立体日记**”的应用。请先完整阅读 `docs/PROJECT_REQUIREMENTS.md`，并把它作为当前阶段产品范围和验收标准的主要依据。随后检查仓库现状、已有文档、代码、配置和测试，再处理我本次提出的任务。
 
 ### 产品背景
 
@@ -79,7 +79,7 @@ MVP 聚焦以下能力：
 - 桌面原型采用本地 Web 界面加 Python 建模服务：React/TypeScript/Three.js 负责界面和实时模型查看，FastAPI/PyTorch 负责图片处理、任务管理和人体/服装建模；
 - 第一阶段使用 SQLite 和本地文件系统，不引入完整云后端、账户、Redis、对象存储或推送通知；
 - 浏览器原型验证成功后，如需要安装包再评估 Tauri；
-- 详细方案见项目根目录 `DESKTOP_PROTOTYPE_TECH_STACK.md`。
+- 详细方案见 `docs/DESKTOP_PROTOTYPE_TECH_STACK.md`。
 
 ### 产品与体验原则
 
@@ -105,7 +105,7 @@ MVP 聚焦以下能力：
 7. 设计异步生成流程时，必须覆盖任务幂等、状态恢复、失败重试、重复提交和资产清理。
 8. 设计数据层时，至少考虑用户、OOTD 记录、媒体资产、生成任务和生成结果。
 9. 设计隐私时，至少考虑原图默认私密、授权访问、第三方 AI 数据政策、删除流程和日志脱敏。
-10. 若需求与 `PROJECT_REQUIREMENTS.md` 冲突，以我当前会话中的明确指令为准，并同步更新文档。
+10. 若需求与 `docs/PROJECT_REQUIREMENTS.md` 冲突，以我当前会话中的明确指令为准，并同步更新文档。
 
 ### 本次任务
 
@@ -154,7 +154,7 @@ MVP 聚焦以下能力：
 ## 新会话使用示例
 
 ```text
-请阅读 PROJECT_PROMPT.md 和 PROJECT_REQUIREMENTS.md。
+请阅读 docs/PROJECT_PROMPT.md 和 docs/PROJECT_REQUIREMENTS.md。
 
 本次任务：为 MVP 输出技术架构，并在项目内创建架构文档。重点比较 React Native 与 Flutter、2.5D 与轻量 3D 实时展示，以及第三方建模服务与自部署重建模型的成本和风险。不要开始编码。
 ```
